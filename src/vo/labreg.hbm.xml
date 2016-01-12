@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.LabRegVO" table="labreg">
+
+   <id name="s_id" type="long" column="s_id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="u_id">
+   <column name="u_id"/>
+  </property>
+  <property name="name">
+   <column name="name"/>
+  </property>
+  
+ 
+  <property name="contact_no">
+   <column name="contact_no"/>
+  </property>
+  <property name="email">
+   <column name="email"/>
+  </property>
+  
+  
+ <many-to-one name="package_id" class="vo.PackageVO" cascade="delete" column="package_id" fetch="select"></many-to-one>
+ 
+ 
+  
+ </class>
+</hibernate-mapping>

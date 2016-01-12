@@ -1,0 +1,95 @@
+body{text-align:center;font-family:'Verdana';}
+.container{width:1140px;text-align:center;margin:0 auto;}
+
+.pull-left{float:left !important;}
+.pull-right{float:right !important;}
+
+.first{margin:0;}
+
+.custom-form{margin:30px 0;display:inline-block;width:100%;}
+.formrow{margin:0 0 10px;float:left;width:100%;}
+
+.custom-form label{color:#00000;font-size:18px;}
+
+table.style1{border:none;width:100%;border-spacing:0;margin:30px 0;}
+
+table.style1 thead tr{background:#B22222;}
+table.style1 thead tr th{padding:15px 0;text-align:center;color:#fff;font-weight:normal;font-size:16px;}
+table.style1 tbody tr td{padding:15px 5px;color:#000000;font-size:16px;}
+
+table.style1 tbody tr:nth-child(2n){background:#F4EFF0;}
+
+.colrow{margin:0 -15px 10px;width:100%;display:inline-block;}
+.col-6{width:50%;display:inline-block;float:left;}
+.pad15{padding:0 15px;}
+
+.text-center{text-align:center;}
+
+.bold{font-weight:bold;margin:0 0 20px;display:inline-block;font-size:24px !important;}
+
+.custom-form input[type='text']{
+	outline:none;
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	padding:0 10px;
+	color:#000;
+}
+.colrow label{line-height:34px;}
+
+.custom-form input[type='submit'],
+.custom-form input[type='reset'],
+.custom-form input[type='button']{
+	border:none;
+	outline:none;
+	background:#B22222;
+	padding:10px 40px;
+	text-align:center;
+	color:#fff;
+	border:1px solid #B22222;
+}
+.custom-form input[type='reset']{	
+	background:#000;
+	border:1px solid #000;
+}
+.custom-form input[type='submit']:hover{
+	background:#fff;
+	border:1px solid #B22222;
+	color:#B22222;
+}
+.custom-form input[type='reset']:hover{
+	background:#fff;
+	border:1px solid #000;
+	color:#000;
+}
+
+.main-title h1{
+	color:#B22222;
+	font-size:26px;
+	text-transform:uppercase;
+	margin:20px 0 30px;
+}
+.promobox{
+	border:1px solid #ddd;
+	padding:20px 30px;
+	border: 5px solid #fff;	  
+		
+	  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.promobox h3{padding:10px 20px;background:#000;color:#fff;margin:0 0 20px;}
+
+.promobox p{font-size:12px;color:#999;line-height:22px;min-height:130px;}
+.promobox span{display:block;margin:0 0 20px;font-weight:bold;color:#000;}
+.promobox a{display:block;margin:0 0 20px;color:#fff;font-size:12px;text-decoration:none;display:inline-block;background:#B22222;
+	padding:10px 30px;
+	text-align:center;
+	color:#fff;
+	border:1px solid #B22222;}
+.promobox a:hover{
+	background:#fff;
+	border:1px solid #B22222;
+	color:#B22222;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.ReportVO" table="report">
+   <id name="id" type="long" column="id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="report_no">
+   <column name="report_no"/>
+  </property>
+  
+  <property name="a1">
+   <column name="a1"/>
+  </property>
+  <property name="a2">
+   <column name="a2"/>
+  </property>
+  <property name="b1">
+   <column name="b1"/>
+  </property>
+  <property name="b2">
+   <column name="b2"/>
+  </property>
+  <property name="dr1">
+   <column name="dr1"/>
+  </property>
+  <property name="dr2">
+   <column name="dr2"/>
+  </property>
+  
+  <many-to-one name="s_id" class="vo.LabRegVO" cascade="delete" column="s_id" fetch="select"></many-to-one>
+  
+ 
+ </class>
+</hibernate-mapping>

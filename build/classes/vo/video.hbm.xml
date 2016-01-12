@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.VideoVO" table="video" lazy="false">
+  
+   <id name="video_id" type="long" column="video_id" >
+		<generator class="increment"/> </id>
+   <property name="video_name">
+		<column name="video_name" />
+   </property>
+   <property name="video_desc">
+		<column name="video_desc" />
+   </property>
+   <property name="video_path">
+		<column name="video_path" />
+   </property>
+   
+   
+  
+   
+ </class>
+</hibernate-mapping>

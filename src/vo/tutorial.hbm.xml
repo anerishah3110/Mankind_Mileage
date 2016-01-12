@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.TutorialVO" table="tutorial">
+   <id name="tutorial_id" type="long" column="tutorial_id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="tutorial_name">
+   <column name="tutorial_name"/>
+  </property>
+  
+  <property name="tutorial_desc">
+   <column name="tutorial_description"/>
+  </property>
+  
+  
+  <property name="tutorial_path">
+   <column name="tutorial_path"/>
+  </property>
+  
+ 
+ </class>
+</hibernate-mapping>

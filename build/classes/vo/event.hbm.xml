@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.EventVO" table="event">
+   <id name="event_id" type="long" column="event_id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="event_name">
+   <column name="event_name"/>
+  </property>
+  <property name="event_description">
+   <column name="event_description"/>
+  </property>
+  <property name="event_place">
+   <column name="event_place"/>
+  </property>
+  
+ <property name="event_date">
+   <column name="event_date"/>
+  </property>
+  
+  
+ 
+ </class>
+</hibernate-mapping>

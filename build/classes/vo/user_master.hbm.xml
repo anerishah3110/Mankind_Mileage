@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.UserMasterVO" table="userMaster">
+   <id name="user_id" type="long" column="user_id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="user_name">
+   <column name="user_name"/>
+  </property>
+  <property name="user_password">
+   <column name="user_password"/>
+  </property>
+  <property name="user_status">
+   <column name="user_status"/>
+  </property>
+  <property name="user_type">
+   <column name="user_type"/>
+  </property>
+   <property name="type">
+   <column name="type"/>
+  </property>
+  
+ 
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.SiblingMapVO" table="siblingMap">
+
+   <id name="id" type="long" column="id">
+   <generator class="increment"/>
+  </id>
+
+  <many-to-one name="s_id" class="vo.LabRegVO" cascade="delete" column="s_id" fetch="select"></many-to-one> 
+  <many-to-one name="u_id" class="vo.UserMasterVO" cascade="delete" column="u_id" fetch="select"></many-to-one>
+ 
+ 
+ 
+  
+ </class>
+</hibernate-mapping>

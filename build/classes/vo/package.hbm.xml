@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.PackageVO" table="package">
+
+   <id name="package_id" type="long" column="package_id">
+   <generator class="increment"/>
+  </id>
+
+  <property name="package_name">
+   <column name="package_name"/>
+  </property>
+  <property name="package_description">
+   <column name="package_description"/>
+  </property>
+  <property name="package_duration">
+   <column name="package_duration"/>
+  </property>
+ <property name="package_price">
+   <column name="package_price"/>
+  </property>
+  <property name="package_type">
+   <column name="package_type"/>
+  </property>
+  <many-to-one name="category_id" class="vo.CategoryVO" cascade="delete" column="category_id" fetch="select"></many-to-one>
+ 
+ 
+ 
+  
+ </class>
+</hibernate-mapping>
